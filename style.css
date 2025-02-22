@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    margin: 0px;
+    margin-bottom: 25px;
+    padding: 0px;
+    background: linear-gradient(to right,rgb(255, 255, 255),rgb(255, 0, 0));
+    display: flex; /* Affichage en ligne */
+    align-items: center; /* Alignement vertical */
+    justify-content: space-between; /* Espacement entre l'image et le menu */
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+#navHeader {
+    list-style: none; /* Supprime les puces */
+    display: flex; /* Affichage en ligne */
+    justify-content: right; /* Alignement à droite */
+    padding: 0;
+    margin: 0;
+}
+
+#navHeader li {
+    margin: 0 15px; /* Espacement horizontal entre les liens */
+}
+
+#navHeader a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: black; /* Couleur du texte */
+    font-weight: bold;
+    font-family: 'Inter', serif;
+    font-size: 32px;
+}
+
+.headerImageRight {
+    object-fit: contain;
+    position: absolute;
+    display: flex;
+    top: -300px;
+    right: -150px;
+    width: 600px;
+    opacity: 0.2;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+    margin-left: 10%;
+}
+
+.description {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 10%;
+    color: grey;
+    width: 870px;
+    margin-bottom: 100px;
+}
+
+#bigImage {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#triptiqueCI {
+    display: flex;           /* Active le mode Flexbox */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 100px;               /* Ajoute un espace entre les éléments */
+}
+
+#triptiqueCI span {
+    display: flex;           /* Rend les span flexibles */
+    flex-direction: column;  /* Affiche le contenu en colonne */
+    align-items: center;     /* Centre le texte sous l'image */
+}
+
+#triptiqueCI img {
+    height: 200px;
+    align-items: top;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: grey;
+    width: 300px;
+}
