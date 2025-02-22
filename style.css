@@ -49,6 +49,7 @@ header {
     right: -150px;
     width: 600px;
     opacity: 0.2;
+    pointer-events: none;
 }
 
 h1 {
