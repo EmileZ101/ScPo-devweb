@@ -7,6 +7,12 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+ul li {
+    margin-bottom: 15px;
 }
 
 header {
@@ -34,7 +40,6 @@ header {
 }
 
 #navHeader a {
-    text-decoration: none; /* Supprime le soulignement */
     color: black; /* Couleur du texte */
     font-weight: bold;
     font-family: 'Inter', serif;
@@ -50,6 +55,10 @@ header {
     width: 600px;
     opacity: 0.2;
     pointer-events: none;
+}
+
+.page-selectionnee {
+    text-decoration: underline;
 }
 
 h1 {
@@ -78,6 +87,7 @@ h1 {
     display: flex;           /* Active le mode Flexbox */
     justify-content: center; /* Centre les éléments horizontalement */
     gap: 100px;               /* Ajoute un espace entre les éléments */
+    margin-bottom: 50px;
 }
 
 #triptiqueCI span {
@@ -104,4 +114,72 @@ p {
     font-weight: normal;
     color: grey;
     width: 300px;
+}
+
+.rectangle-exp {
+    background-color: aquamarine;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color:black;
+    border: 2px solid black;
+    border-radius: 10px
+}
+
+.liens_contacts a {
+    margin: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+#blocfin {
+    margin: 10px;
+}
+
+.presentation-parcours {
+    text-align: center;
+}
+
+.axe-presentation + ul {
+    margin-top: 15px;
+}
+
+.axe-presentation {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.niveau {
+    margin-bottom: 15px;
+}
+
+.etablissement {
+    font-weight: bold;
+}
+
+.element {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.espace {
+    height: 50px;
+}
+
+.titre-projet {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+iframe {
+    display: block;  /* Nécessaire pour utiliser margin auto */
+    margin: 0 auto;  /* Centre horizontalement */
+    width: 50%;  /* Ajuste la largeur selon ton besoin */
+    height: 800px;  /* Ajuste la hauteur */
+    margin-bottom: 20px;
 }
