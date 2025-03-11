@@ -2,48 +2,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+
+/* Pour toutes les pages :*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: 'Inter', sans-serif;
-    text-decoration: none; /* Supprime le soulignement */
+    text-decoration: none;
 }
 
 a {
     color:black;
 }
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+    margin-left: 10%;
+}
+
+.description {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 10%;
+    color: grey;
+    width: 870px;
+    margin-bottom: 100px;
+}
+
 ul li {
     margin-bottom: 15px;
 }
+
+
+/* Pour le header :*/
 
 header {
     margin: 0px;
     margin-bottom: 25px;
     padding: 0px;
     background: linear-gradient(to right,rgb(255, 255, 255),rgb(255, 0, 0));
-    display: flex; /* Affichage en ligne */
-    align-items: center; /* Alignement vertical */
-    justify-content: space-between; /* Espacement entre l'image et le menu */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 10px;
     border-bottom: 1px solid black;
 }
 
 #navHeader {
-    list-style: none; /* Supprime les puces */
-    display: flex; /* Affichage en ligne */
-    justify-content: right; /* Alignement à droite */
+    list-style: none;
+    display: flex;
+    justify-content: right;
     padding: 0;
     margin: 0;
 }
 
 #navHeader li {
-    margin: 0 15px; /* Espacement horizontal entre les liens */
+    margin: 0 15px;
 }
 
 #navHeader a {
-    color: black; /* Couleur du texte */
+    color: black;
     font-weight: bold;
     font-family: 'Inter', serif;
     font-size: 32px;
@@ -64,22 +88,21 @@ header {
     text-decoration: underline;
 }
 
-h1 {
-    font-family: 'Inter', sans-serif;
-    font-size: 64px;
-    font-weight: bold;
-    margin-left: 10%;
+
+/* Pour les liens en fin de page :*/
+
+.liens_contacts a {
+    margin: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
 }
 
-.description {
-    font-family: 'Inter', sans-serif;
-    font-size: 24px;
-    margin-top: 20px;
-    margin-left: 10%;
-    color: grey;
-    width: 870px;
-    margin-bottom: 100px;
+#blocfin {
+    margin: 10px;
 }
+
+
+/* Pour la page d'acceuil :*/
 
 #bigImage {
     width: 100%;
@@ -87,16 +110,16 @@ h1 {
 }
 
 #triptiqueCI {
-    display: flex;           /* Active le mode Flexbox */
-    justify-content: center; /* Centre les éléments horizontalement */
-    gap: 100px;               /* Ajoute un espace entre les éléments */
+    display: flex;
+    justify-content: center;
+    gap: 100px;
     margin-bottom: 50px;
 }
 
 #triptiqueCI span {
-    display: flex;           /* Rend les span flexibles */
-    flex-direction: column;  /* Affiche le contenu en colonne */
-    align-items: center;     /* Centre le texte sous l'image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #triptiqueCI img {
@@ -105,18 +128,19 @@ h1 {
     margin-bottom: 20px;
 }
 
-h2 {
+#triptiqueCI h2 {
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-weight: bold;
 }
 
-p {
+#triptiqueCI p {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: normal;
     color: grey;
     width: 300px;
+    text-align: center;
 }
 
 .rectangle-exp {
@@ -132,21 +156,23 @@ p {
     border-radius: 10px
 }
 
+.espace {
+    height: 50px;
+}
+
 .insta {
-    width: 600px;
+    width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
-.liens_contacts a {
-    margin: 20px;
-    margin-right: 10px;
-    margin-bottom: 20px;
+.instagram-media {
+    width: 600px;
+    height: 900px;
+    margin: 0 auto !important; /* J'ai été obligé de rajouter le !important, sinon le recentrage ne fonctionnait pas. Je n'ai pas compris pourquoi... :*/
 }
 
-#blocfin {
-    margin: 10px;
-}
-
+/* Pour la page Présentation :*/
 .presentation-parcours {
     text-align: center;
 }
@@ -175,19 +201,39 @@ p {
     margin-bottom: 15px;
 }
 
-.espace {
-    height: 50px;
-}
+
+/* Pour la page Projets :*/
 
 .titre-projet {
     margin-bottom: 20px;
     text-align: center;
 }
 
+.sous-titre-projet {
+    margin-bottom: 16px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: grey;
+}
+
 iframe {
-    display: block;  /* Nécessaire pour utiliser margin auto */
-    margin: 0 auto;  /* Centre horizontalement */
-    width: 50%;  /* Ajuste la largeur selon ton besoin */
-    height: 800px;  /* Ajuste la hauteur */
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 800px;
     margin-bottom: 20px;
 }
+
+.MEC-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.iframe-MEC {
+    width: 45%;
+    height: 600px;
+}
+
+/* Pour la page Contact :*/
+/*Rien pour le moment. */
